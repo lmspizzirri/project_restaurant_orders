@@ -28,7 +28,7 @@ class InventoryMapping:
     # Req 5.1
     def check_recipe_availability(self, recipe: Recipe) -> bool:
         inventory_keys = list(recipe)
-        for key in iventory_keys:
+        for key in inventory_keys:
             inventory_quantity = self.inventory.get(key)
             quantity = recipe.get(key)
         return inventory_quantity >= quantity
