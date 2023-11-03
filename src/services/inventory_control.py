@@ -42,3 +42,6 @@ class InventoryMapping:
                 self.inventory.update({key: inventory_quantity - recipe[key]})
             else:
                 raise ValueError("Recipe not avaiable")
+
+    def check_ingredient_availability(self, ingredient: Ingredient) -> bool:
+        return ingredient in self.inventory and self.inventory[ingredient] > 0
