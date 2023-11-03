@@ -35,4 +35,4 @@ class MenuBuilder:
                     "price": dish.price,
                     "restrictions": list(dish.get_restrictions())
                 }
-                main_menu.append(dish_info) 
+                menu.append(dish_info) 
